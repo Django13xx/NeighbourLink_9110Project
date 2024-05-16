@@ -11,7 +11,7 @@ NeighbourLink is a web-based car-sharing platform designed to facilitate multipl
 
 ## Project Overview
 
-NeighbourLink aims to provide an environmentally sustainable car-sharing solution. By connecting drivers and riders, we help reduce carbon footprints and foster community connections.
+NeighbourLink aims to provide an environmentally sustainable car-sharing solution. By connecting drivers and riders, we help reduce carbon footprints and foster community connections. you can have a quickly walkthrough by watching the video named "neighbourlink240416.mp4"
 
 ## Features
 
