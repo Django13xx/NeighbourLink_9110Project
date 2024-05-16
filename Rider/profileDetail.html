@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Details</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="#" class="back-btn" onclick="goBack()"
+        ><img src="./images/back.png"
+      /></a>
+      <div class="time-bar"></div>
+      <div class="profile-info">
+        <img src="./images/photo.png" alt="Profile Picture" />
+        <h3>John Smith</h3>
+        <p>johnsmith@gmail.com</p>
+      </div>
+      <div class="personal-details">
+        <h4>Personal Information</h4>
+        <div class="detail-item">
+          <span class="label">Date of Birth:</span>
+          <span class="value">May 15, 1990</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Phone:</span>
+          <span class="value">+1 (555) 123-4567</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Address:</span>
+          <span class="value">123 Main Street, Cityville, CA 12345</span>
+        </div>
+        <div class="detail-item">
+          <span class="label">Points:</span>
+          <span class="value">5623</span>
+        </div>
+      </div>
+      <a href="./monthlyReport.html">
+        <button class="report-button">
+          <i class="fas fa-chart-bar"></i>
+          Monthly Report
+        </button>
+      </a>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>

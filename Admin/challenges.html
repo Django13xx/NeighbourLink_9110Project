@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenges and Gamification - NeighbourLink</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="challenges.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><i class="fas fa-trophy"></i> Challenges and Gamification</h1>
+      </header>
+      <section class="add-challenge">
+        <h2><i class="fas fa-plus-circle"></i> Add New Challenge</h2>
+        <form id="add-challenge-form">
+          <input type="text" placeholder="Challenge Name" required />
+
+          <label for="start-date">From:</label>
+          <input type="date" id="start-date" name="start-date" required />
+
+          <label for="end-date">To:</label>
+          <input type="date" id="end-date" name="end-date" required />
+
+          <label for="repeat">Repeat?</label>
+          <input type="checkbox" id="repeat" name="repeat" />
+
+          <div id="repeat-options" style="display: none">
+            <label for="repeat-frequency">Repeat cycle:</label>
+            <select id="repeat-frequency" name="repeat-frequency">
+              <option value="weekly">Weekly</option>
+              <option value="monthly">Monthly</option>
+              <option value="yearly">Yearly</option>
+            </select>
+          </div>
+
+          <input type="checkbox" id="pinned" name="pinned" />
+          <label for="pinned">Pinned</label>
+
+          <textarea placeholder="Description"></textarea>
+
+          <button type="submit" class="button">Create Challenge</button>
+        </form>
+      </section>
+      <section class="current-challenges">
+        <h2><i class="fas fa-tasks"></i> Current Challenges</h2>
+
+        <div class="challenges-list">
+          <div class="challenge">
+            <h3>Weekly Eco-Warrior</h3>
+            <p class="duration">Duration: 7 days</p>
+            <p class="goal">Goal: Complete 5 carpool rides</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 60%"></div>
+            </div>
+            <p class="progress-text">3/5 rides completed</p>
+          </div>
+          <div class="challenge">
+            <h3>Monthly Green Commuter</h3>
+            <p class="duration">Duration: 30 days</p>
+            <p class="goal">Goal: Complete 20 carpool rides</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 25%"></div>
+            </div>
+            <p class="progress-text">5/20 rides completed</p>
+          </div>
+          <div class="challenge pinned">
+            <h3>Earth Day Challenge</h3>
+            <p class="duration">Duration: 7 days</p>
+            <p class="goal">Goal: Reduce carbon footprint by 50%</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 80%"></div>
+            </div>
+            <p class="progress-text">Ongoing</p>
+          </div>
+        </div>
+      </section>
+      <section class="leaderboard">
+        <h2><i class="fas fa-crown"></i> Leaderboard</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th><i class="fas fa-car"></i> Rides Completed</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+    </div>
+    <script src="challenge.js"></script>
+  </body>
+</html>

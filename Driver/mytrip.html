@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Trips</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="#" class="back-btn" onclick="goBack()"
+        ><img src="./images/back.png"
+      /></a>
+      <div class="time-bar"></div>
+      <main>
+        <div class="header">
+          <div class="tab-buttons">
+            <button
+              class="tab-btn-trip"
+              data-tab="my-trips"
+              onclick="toggleTripInfo()"
+            >
+              My Trips
+            </button>
+            <button
+              class="tab-btn-history"
+              data-tab="ride-history"
+              onclick="toggleHistoryInfo()"
+            >
+              Ride History
+            </button>
+          </div>
+        </div>
+        <div class="mainbody">
+          <div class="my-trip"></div>
+          <div class="trip-history" style="display: none"></div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-icons">
+          <a href="homepage.html" class="icon home active"></a>
+          <a href="./ChatAndFeedback/chatMenu.html" class="icon chat"></a>
+          <a href="board.html" class="icon board"></a>
+          <a href="profile.html" class="icon profile"></a>
+        </div>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

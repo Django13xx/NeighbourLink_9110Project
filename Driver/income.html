@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Income Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="time-bar"></div>
+      <div class="income-title">
+        <h1>My Income</h1>
+        <div class="date-picker">
+          <i class="fas fa-calendar-alt"></i>
+          <input type="month" id="monthPicker" name="monthPicker" />
+        </div>
+      </div>
+      <a href="#" class="back-btn" onclick="goBack()"
+        ><img src="./images/back.png"
+      /></a>
+      <main>
+        <div class="income-summary">
+          <h2>Total Income</h2>
+          <p class="total-income">$2,500</p>
+        </div>
+        <div class="income-breakdown">
+          <h2>Income Breakdown</h2>
+          <div class="breakdown-item">
+            <div class="icon-container">
+              <i class="fas fa-car"></i>
+            </div>
+            <div class="details">
+              <p class="title">Rides</p>
+              <p class="amount">$2,000</p>
+            </div>
+          </div>
+          <div class="breakdown-item">
+            <div class="icon-container">
+              <i class="fas fa-gift"></i>
+            </div>
+            <div class="details">
+              <p class="title">Bonuses</p>
+              <p class="amount">$500</p>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-icons">
+          <a href="homepage.html" class="icon home active"></a>
+          <a href="./ChatAndFeedback/chatMenu.html" class="icon chat"></a>
+          <a href="board.html" class="icon board"></a>
+          <a href="profile.html" class="icon profile"></a>
+        </div>
+      </footer>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

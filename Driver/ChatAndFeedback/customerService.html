@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Service - NeighborLink</title>
+    <link rel="stylesheet" href="customerService.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="#" class="back-btn" onclick="goBack()"
+        ><img src="../images/back.png"
+      /></a>
+      <div class="time-bar"></div>
+      <div class="title"><h1>Customer Service</h1></div>
+
+      <!-- Chat Messages Section -->
+      <div class="chat-messages" id="chat-messages">
+        <!-- Initial message to indicate this is a Chatbot -->
+        <div class="chatbot-message">
+          <p>
+            <strong>Chatbot:</strong> Welcome! I'm here to assist you. If you
+            need to speak to a human agent, please click on the link provided.
+          </p>
+        </div>
+      </div>
+
+      <!-- Chat Input Section -->
+      <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <script src="customerService.js"></script>
+  </body>
+</html>

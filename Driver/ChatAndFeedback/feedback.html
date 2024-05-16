@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback - NeighborLink</title>
+    <link rel="stylesheet" href="feedback.css" />
+  </head>
+  <body>
+    <a href="chatMenu.html" class="back-btn"
+      ><img src="../images/back.png"
+    /></a>
+    <div class="time-bar"></div>
+    <div class="feedback-container">
+      <!-- FAQ Section -->
+      <div class="faq-section">
+        <h2>FAQ</h2>
+        <ul>
+          <li>
+            <strong>Q: How do I register as a driver?</strong><br />A: You can
+            register by clicking on the 'Register' button on the login page.
+          </li>
+          <li>
+            <strong>Q: How can I contact customer service?</strong><br />A: You
+            can contact us through the 'Get Help' link on the login page.
+          </li>
+          <li>
+            <strong>Q: Is my personal information safe?</strong><br />A: Yes, we
+            prioritize the security and privacy of your personal information.
+          </li>
+          <li>
+            <strong>Q: How do I reset my password?</strong><br />A: You can
+            reset your password through the 'Forgot Password' link on the login
+            page.
+          </li>
+          <li>
+            <strong>Q: Can I change my default payment method?</strong><br />A:
+            Yes, you can change your default payment method in the settings
+            section of your profile.
+          </li>
+          <!-- Add more FAQ items as needed -->
+        </ul>
+      </div>
+      <h1>Feedback</h1>
+
+      <!-- Feedback Form -->
+      <textarea
+        placeholder="Anything you want to ask or tell us!"
+        rows="4"
+      ></textarea>
+      <button onclick="submitFeedback()">Submit</button>
+
+      <!-- Contact Customer Service -->
+      <div class="customer-service">
+        <h2>Contact Customer Service</h2>
+        <button onclick="openChatBox()">Contact Us</button>
+      </div>
+      <!-- Privacy Policy -->
+      <div class="privacy-policy">
+        <h2>Privacy Policy</h2>
+        <button onclick="openPrivacyPolicy()">Privacy Policy</button>
+      </div>
+    </div>
+    <script src="feedback.js"></script>
+  </body>
+</html>

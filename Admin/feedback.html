@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback and Insights - NeighbourLink</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="feedback.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="header">
+          <h2><i class="fas fa-comment-alt"></i> User Feedback</h2>
+        </div>
+        <section class="feedback-section">
+          <div class="feedback-filter">
+            <button class="active">All</button>
+            <button>Positive</button>
+            <button>Negative</button>
+          </div>
+          <div class="feedback-items">
+            <div class="feedback-item positive">
+              <p>
+                <strong>John Doe:</strong> Really enjoyed the new carpooling
+                feature!
+              </p>
+              <button>Respond</button>
+            </div>
+            <div class="feedback-item negative">
+              <p>
+                <strong>Jane Smith:</strong> The app crashed multiple times
+                today.
+              </p>
+              <button>Respond</button>
+            </div>
+            <div class="feedback-item positive">
+              <p>
+                <strong>Bob Johnson:</strong> Great service! The driver was very
+                friendly.
+              </p>
+              <button>Respond</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="main">
+        <div class="header">
+          <h2><i class="fas fa-chart-line"></i> Insights Dashboard</h2>
+        </div>
+        <section class="insights-dashboard">
+          <div class="chart-container">
+            <canvas id="userEngagementChart"></canvas>
+          </div>
+          <div class="metrics">
+            <div class="metric">
+              <h3>Total Users</h3>
+              <p>12,345</p>
+            </div>
+            <div class="metric">
+              <h3>Active Users</h3>
+              <p>8,765</p>
+            </div>
+            <div class="metric">
+              <h3>Positive Feedback</h3>
+              <p>75%</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="feedback.js"></script>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emergency Requests - NeighbourLink</title>
+    <link rel="stylesheet" href="emergency.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1><i class="fas fa-exclamation-triangle"></i> Emergency Requests</h1>
+      <div class="marquee">
+        <span>⚠️ Please deal with it as soon as possible!</span>
+      </div>
+    </div>
+    <div class="main">
+      <div class="container" data-status="pending">
+        <div class="request" data-status="pending" onclick="openChat(this);">
+          <div class="user-info">
+            <img
+              src="https://randomuser.me/api/portraits/men/51.jpg"
+              alt="User Avatar"
+            />
+            <h2>John Doe - Flat Tire</h2>
+          </div>
+          <p>
+            <i class="fas fa-clock"></i> <strong>Timestamp:</strong> 2024-04-14
+            15:37
+          </p>
+          <p>
+            <i class="fas fa-circle status-icon pending"></i>
+            <strong>Status:</strong>
+            <span class="status status-icon pending">Pending</span>
+          </p>
+          <p>
+            <strong>Contact:</strong>
+            <a><i class="fas fa-envelope"></i> Email</a>
+            | <a><i class="fas fa-phone"></i> Call</a> |
+            <a onclick="openChat(event, 'JohnDoeChat');">
+              <i class="fas fa-comments"></i> Chat
+            </a>
+          </p>
+          <button
+            data-status="pending"
+            class="resolve"
+            onclick="markResolved(event, this);"
+          >
+            <i class="fas fa-check"></i> Mark as Resolved
+          </button>
+        </div>
+      </div>
+      <div class="container" data-status="pending">
+        <div class="request" data-status="pending" onclick="openChat(this);">
+          <div class="user-info">
+            <img
+              src="https://randomuser.me/api/portraits/women/42.jpg"
+              alt="User Avatar"
+            />
+            <h2>Jane Smith - Car Breakdown</h2>
+          </div>
+          <p>
+            <i class="fas fa-clock"></i> <strong>Timestamp:</strong> 2024-04-15
+            10:22
+          </p>
+          <p>
+            <i class="fas fa-circle status-icon pending"></i>
+            <strong>Status:</strong>
+            <span class="status status-icon pending">Pending</span>
+          </p>
+          <p>
+            <strong>Contact:</strong>
+            <a><i class="fas fa-envelope"></i> Email</a>
+            | <a><i class="fas fa-phone"></i> Call</a> |
+            <a onclick="openChat(event, 'JaneSmithChat');">
+              <i class="fas fa-comments"></i> Chat
+            </a>
+          </p>
+          <button
+            data-status="pending"
+            class="resolve"
+            onclick="markResolved(event, this);"
+          >
+            <i class="fas fa-check"></i> Mark as Resolved
+          </button>
+        </div>
+      </div>
+      <div class="container" data-status="resolved">
+        <div class="request" data-status="resolved" onclick="openChat(this);">
+          <div class="user-info">
+            <img
+              src="https://randomuser.me/api/portraits/men/23.jpg"
+              alt="User Avatar"
+            />
+            <h2>Bob Johnson - Medical Emergency</h2>
+          </div>
+          <p>
+            <i class="fas fa-clock"></i> <strong>Timestamp:</strong> 2024-04-14
+            18:45
+          </p>
+          <p>
+            <i class="fas fa-circle status-icon resolved"></i>
+            <strong>Status:</strong>
+            <span class="status status-icon resolved">Resolved</span>
+          </p>
+          <p>
+            <strong>Contact:</strong>
+            <a><i class="fas fa-envelope"></i> Email</a>
+            | <a><i class="fas fa-phone"></i> Call</a> |
+            <a onclick="openChat(event, 'BobJohnsonChat');">
+              <i class="fas fa-comments"></i> Chat
+            </a>
+          </p>
+          <button
+            data-status="resolved"
+            class="resolve"
+            onclick="markResolved(event, this);"
+          >
+            <i class="fas fa-check"></i> Mark as Unresolved
+          </button>
+        </div>
+      </div>
+      <div class="container" data-status="pending">
+        <div class="request" data-status="pending" onclick="openChat(this);">
+          <div class="user-info">
+            <img
+              src="https://randomuser.me/api/portraits/women/75.jpg"
+              alt="User Avatar"
+            />
+            <h2>Sarah Lee - Roadside Assistance</h2>
+          </div>
+          <p>
+            <i class="fas fa-clock"></i> <strong>Timestamp:</strong> 2024-04-16
+            09:15
+          </p>
+          <p>
+            <i class="fas fa-circle status-icon pending"></i>
+            <strong>Status:</strong>
+            <span class="status status-icon pending">Pending</span>
+          </p>
+          <p>
+            <strong>Contact:</strong>
+            <a><i class="fas fa-envelope"></i> Email</a>
+            | <a><i class="fas fa-phone"></i> Call</a> |
+            <a onclick="openChat(event, 'SarahLeeChat');">
+              <i class="fas fa-comments"></i> Chat
+            </a>
+          </p>
+          <button
+            data-status="pending"
+            class="resolve"
+            onclick="markResolved(event, this);"
+          >
+            <i class="fas fa-check"></i> Mark as Resolved
+          </button>
+        </div>
+      </div>
+      <div class="container" data-status="resolved">
+        <div class="request" data-status="resolved" onclick="openChat(this);">
+          <div class="user-info">
+            <img
+              src="https://randomuser.me/api/portraits/men/42.jpg"
+              alt="User Avatar"
+            />
+            <h2>Michael Brown - Lockout Assistance</h2>
+          </div>
+          <p>
+            <i class="fas fa-clock"></i> <strong>Timestamp:</strong> 2024-04-15
+            14:30
+          </p>
+          <p>
+            <i class="fas fa-circle status-icon resolved"></i>
+            <strong>Status:</strong>
+            <span class="status status-icon resolved">Resolved</span>
+          </p>
+          <p>
+            <strong>Contact:</strong>
+            <a><i class="fas fa-envelope"></i> Email</a>
+            | <a><i class="fas fa-phone"></i> Call</a> |
+            <a onclick="openChat(event, 'MichaelBrownChat');">
+              <i class="fas fa-comments"></i> Chat
+            </a>
+          </p>
+          <button
+            data-status="resolved"
+            class="resolve"
+            onclick="markResolved(event, this);"
+          >
+            <i class="fas fa-check"></i> Mark as Unresolved
+          </button>
+        </div>
+      </div>
+      <div class="container" data-status="pending">
+        <div class="request" data-status="pending" onclick="openChat(this);">
+          <div class="user-info">
+            <img
+              src="https://randomuser.me/api/portraits/women/17.jpg"
+              alt="User Avatar"
+            />
+            <h2>Emily Wilson - Battery Assistance</h2>
+          </div>
+          <p>
+            <i class="fas fa-clock"></i> <strong>Timestamp:</strong> 2024-04-17
+            11:22
+          </p>
+          <p>
+            <i class="fas fa-circle status-icon pending"></i>
+            <strong>Status:</strong>
+            <span class="status status-icon pending">Pending</span>
+          </p>
+          <p>
+            <strong>Contact:</strong>
+            <a><i class="fas fa-envelope"></i> Email</a>
+            | <a><i class="fas fa-phone"></i> Call</a> |
+            <a onclick="openChat(event, 'EmilyWilsonChat');">
+              <i class="fas fa-comments"></i> Chat
+            </a>
+          </p>
+          <button
+            data-status="pending"
+            class="resolve"
+            onclick="markResolved(event, this);"
+          >
+            <i class="fas fa-check"></i> Mark as Resolved
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chat Modal (hidden by default) -->
+    <div id="chat-modal" class="modal">
+      <div class="chat-header">
+        <img
+          src="https://randomuser.me/api/portraits/men/51.jpg"
+          alt="User Avatar"
+        />
+        <h2>Chat with John Doe</h2>
+        <button onclick="closeChat();"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="chat-messages">
+        <!-- Messages are dynamically loaded here -->
+      </div>
+      <div class="chat-input">
+        <input type="text" placeholder="Type a message..." />
+        <button><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+
+    <script src="emergency.js"></script>
+  </body>
+</html>

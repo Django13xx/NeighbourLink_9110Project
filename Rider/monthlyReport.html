@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monthly Report</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a href="#" class="back-btn" onclick="goBack()"
+        ><img src="./images/back.png"
+      /></a>
+      <div class="time-bar"></div>
+      <div class="report-title">
+        <h1>Monthly Report</h1>
+        <div class="date-picker">
+          <i class="fas fa-calendar-alt"></i>
+          <input type="month" id="monthPicker" name="monthPicker" />
+        </div>
+      </div>
+      <main>
+        <div class="report-section rider-report">
+          <h2>Rider Report</h2>
+          <div class="report-item">
+            <div class="icon-container">
+              <i class="fas fa-car"></i>
+            </div>
+            <div class="details">
+              <p class="title">Frequent Rides</p>
+              <p class="detailvalue">20</p>
+            </div>
+          </div>
+          <div class="report-item">
+            <div class="icon-container">
+              <i class="fas fa-plus"></i>
+            </div>
+            <div class="details">
+              <p class="title">Points Gained</p>
+              <p class="detailvalue">500</p>
+            </div>
+          </div>
+          <div class="report-item">
+            <div class="icon-container">
+              <i class="fas fa-minus"></i>
+            </div>
+            <div class="details">
+              <p class="title">Points Redeemed</p>
+              <p class="detailvalue">200</p>
+            </div>
+          </div>
+          <div class="report-item">
+            <div class="icon-container">
+              <i class="fas fa-file-invoice-dollar"></i>
+            </div>
+            <div class="details">
+              <p class="title">Payment Receipts</p>
+              <p class="detailvalue">$150</p>
+            </div>
+          </div>
+          <div class="report-item">
+            <div class="icon-container">
+              <i class="fas fa-road"></i>
+            </div>
+            <div class="details">
+              <p class="title">Total Distance</p>
+              <p class="detailvalue">100 KM</p>
+            </div>
+          </div>
+          <div class="report-item">
+            <div class="icon-container">
+              <i class="fas fa-piggy-bank"></i>
+            </div>
+            <div class="details">
+              <p class="title">Total Savings</p>
+              <p class="detailvalue">$50</p>
+            </div>
+          </div>
+          <div class="report-item">
+            <div class="icon-container">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <div class="details">
+              <p class="title">CO2 Emission Reduced</p>
+              <p class="detailvalue">20 kg</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

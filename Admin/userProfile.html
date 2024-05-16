@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profiles and Verification - NeighbourLink</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="userProfile.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="filters">
+        <div class="filter-label">
+          <h1><i class="fas fa-user-circle"></i> User Profile</h1>
+        </div>
+        <div class="filter-btns">
+          <button class="filter-btn active" data-filter="all">
+            <i class="fas fa-users"></i> All
+          </button>
+          <button class="filter-btn" data-filter="drivers">
+            <i class="fas fa-car"></i> Drivers
+          </button>
+          <button class="filter-btn" data-filter="riders">
+            <i class="fas fa-user"></i> Riders
+          </button>
+        </div>
+      </div>
+      <div class="user-profiles">
+        <!-- User profiles will be dynamically added here -->
+      </div>
+    </div>
+
+    <!-- User Details Modal -->
+    <div id="user-details-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal();">&times;</span>
+        <div class="modal-header">
+          <img id="user-avatar" src="" alt="User Avatar" />
+          <h2 id="user-name"></h2>
+        </div>
+        <div class="modal-body">
+          <p><strong>Role:</strong> <span id="user-role"></span></p>
+          <p>
+            <strong>Verification Status:</strong>
+            <span id="verification-status"></span>
+          </p>
+          <p><strong>License:</strong> <span id="license"></span></p>
+          <p><strong>Age:</strong> <span id="age"></span></p>
+          <p><strong>Occupation:</strong> <span id="occupation"></span></p>
+          <p><strong>Family:</strong> <span id="family"></span></p>
+          <p><strong>Address:</strong> <span id="address"></span></p>
+          <p><strong>Additional Notes:</strong> <span id="notes"></span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modification Needed Modal -->
+    <div id="modification-modal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal();">&times;</span>
+        <h2>Modification Suggestions</h2>
+        <p>Please update the necessary fields as suggested below:</p>
+        <!-- Dynamic suggestions here -->
+      </div>
+    </div>
+
+    <script src="userprofile.js"></script>
+  </body>
+</html>

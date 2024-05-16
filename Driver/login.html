@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - NeighborLink</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Login to NeighborLink</h1>
+      <form id="login-form" action="./homepage.html">
+        <!-- Email/phone number input -->
+        <input
+          type="text"
+          id="email-phone"
+          placeholder="Email or Phone Number"
+          required
+        />
+
+        <!-- Password input -->
+        <input type="password" id="password" placeholder="Password" required />
+
+        <!-- Verification code login (optional) -->
+        <input
+          type="text"
+          id="verification-code"
+          placeholder="Verification Code (Optional)"
+        />
+
+        <!-- Login Button -->
+        <button type="submit">Login</button>
+
+        <!-- Forgot password/change password -->
+        <div class="register-content" onclick="login()">Forgot Password?</div>
+        <a href="register.html" class="register-content">
+          Don't have an account?
+        </a>
+        <!-- Contact us/get help -->
+        <a href="/contact.html" id="get-help">Contact Us / Get Help</a>
+      </form>
+    </div>
+  </body>
+</html>

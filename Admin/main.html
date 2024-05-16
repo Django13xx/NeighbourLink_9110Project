@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - NeighbourLink</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <a href="#dashboard" class="active" data-target="dashboard.html"
+        ><i class="fas fa-home"></i> Dashboard</a
+      >
+      <a href="#emergency-requests" data-target="emergency.html"
+        ><i class="fas fa-exclamation-triangle"></i> Emergency Requests</a
+      >
+      <a href="#user-profiles" data-target="userProfile.html"
+        ><i class="fas fa-users"></i> User Profiles</a
+      >
+      <a href="#illegal-advertising" data-target="illegalAd.html"
+        ><i class="fas fa-ad"></i> Illegal Advertising</a
+      >
+      <a href="#challenges" data-target="challenges.html"
+        ><i class="fas fa-trophy"></i> Challenges</a
+      >
+      <a href="#feedback" data-target="feedback.html"
+        ><i class="fas fa-comments"></i> Feedback</a
+      >
+      <a href="#logout" id="logout-link" data-target="logout.html"
+        ><i class="fas fa-sign-out-alt"></i> Logout</a
+      >
+    </div>
+    <iframe id="content-frame" src="dashboard.html"></iframe>
+    <script src="main.js"></script>
+  </body>
+</html>

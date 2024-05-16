@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - NeighbourLink</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <h1>
+          <i class="fas fa-tachometer-alt"></i> Challenges and Gamification
+        </h1>
+      </header>
+      <div class="widgets">
+        <div class="widget">
+          <i class="fas fa-user"></i> Total Users:
+          <span id="total-users">1234</span>
+        </div>
+        <div class="widget">
+          <i class="fas fa-car"></i> Active Rides:
+          <span id="active-rides">56</span>
+        </div>
+        <div class="widget">
+          <i class="fas fa-gamepad"></i> Ongoing Challenges:
+          <span id="ongoing-challenges">3</span>
+        </div>
+        <div class="widget">
+          <i class="fas fa-envelope"></i> Recent Feedback:
+          <span id="recent-feedback">12</span>
+        </div>
+      </div>
+      <div class="activity-feed">
+        <h3>Activity Feed</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <p>
+                <strong>New Carpool Ride:</strong> John Doe and Jane Smith to
+                Downtown - <span class="timestamp">Just now</span>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <p>
+                <strong>New User Joined:</strong> Mike Johnson -
+                <span class="timestamp">2 hours ago</span>
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <p>
+                <strong>Emergency Request:</strong> Flat tire near Central Park
+                - <span class="timestamp">3 hours ago</span>
+              </p>
+            </div>
+          </div>
+          <!-- More timeline items here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

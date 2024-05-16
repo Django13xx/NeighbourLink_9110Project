@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat with Sonjit Babo</title>
+    <link rel="stylesheet" href="chat.css" />
+  </head>
+  <body>
+    <div class="chat-container" id="chatContainer">
+      <a href="#" class="back-btn" onclick="goBack()"
+        ><img src="../images/back.png"
+      /></a>
+      <div class="time-bar"></div>
+      <div class="chat-history" id="chatHistory">
+        <!-- Messages will be loaded by JavaScript -->
+      </div>
+      <div class="chat-input">
+        <input
+          type="text"
+          id="chatMessageInput"
+          placeholder="Type a message..."
+        />
+        <button onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <script src="chat.js"></script>
+  </body>
+</html>

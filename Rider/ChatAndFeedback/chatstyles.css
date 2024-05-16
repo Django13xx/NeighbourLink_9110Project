@@ -1,0 +1,139 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 390px;
+    height: 844px;
+}
+.chat-menu .chat-title {
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #51d476;
+}
+
+.chat-menu {
+    width: 400px;
+    border-right: 1px solid #ccc;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.chat-menu .customer-service {
+    /* at the button of the page */
+    margin-top: 400px;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.chat-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.chat-item:hover {
+    background-color: #f0f0f0;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #aaa;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.details {
+    flex: 1;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.time {
+    margin-left: auto;
+}
+
+.badge {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 设置高度为视口的100% */
+}
+
+.chat-history {
+    flex: 1; /* 使其填充可用空间 */
+    overflow-y: auto; /* 如果聊天记录溢出，启用滚动 */
+    padding: 15px;
+}
+
+.message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 70%;
+}
+.incoming {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+}
+
+.outgoing {
+    align-content: flex-end;
+    background-color: #007bff;
+    color: white;
+}
+
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    margin-top: auto; /* 将其推到容器的底部 */
+}
+
+.message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.send-btn {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #51d476;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background-color: #51d476;
+}
+
+.chat-header {
+    background-color: #51d476;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}

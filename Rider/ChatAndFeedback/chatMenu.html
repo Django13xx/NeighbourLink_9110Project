@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message List</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <a href="feedback.html" class="customer-btn"
+        ><img src="../images/customericon.png"
+      /></a>
+      <div class="time-bar"></div>
+      <div class="title"><h1>Message List</h1></div>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Find here ...."
+          onkeyup="filterMessages()"
+        />
+        <div class="search-icon">&#128269;</div>
+      </div>
+      <button class="emergency-button" onclick="callEmergencyHelp()">
+        <i class="fas fa-phone-alt"></i>
+      </button>
+      <div class="message-list" id="messageList">
+        <!-- Repeat this block for each message -->
+        <a class="message-item" href="chat.html">
+          <img src="../images/message1.png" />
+        </a>
+        <a class="message-item" href="chat.html">
+          <img src="../images/message2.png" />
+        </a>
+        <a class="message-item" href="chat.html">
+          <img src="../images/message3.png" />
+        </a>
+        <a class="message-item" href="chat.html">
+          <img src="../images/message4.png" />
+        </a>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-icons">
+        <a href="../homepage.html" class="icon home active"></a>
+        <a href="chatMenu.html" class="icon chat"></a>
+        <a href="../board.html" class="icon board"></a>
+        <a href="../profile.html" class="icon profile"></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

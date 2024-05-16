@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - NeighborLink</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <div class="register-container">
+      <h1>Register as a NeighborLink Member</h1>
+      <form id="registration-form">
+        <!-- Choose to be a rider or driver -->
+        <label>
+          <input type="radio" name="role" value="rider" checked /> Rider
+        </label>
+        <label>
+          <input type="radio" name="role" value="driver" /> Driver
+        </label>
+
+        <!-- Basic Information -->
+        <input type="text" id="full-name" placeholder="Full Name" required />
+        <select id="gender">
+          <option value="">Gender (Optional)</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+        <input type="tel" id="phone" placeholder="Phone Number" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+
+        <!-- Emergency Contact -->
+        <input
+          type="text"
+          id="emergency-contact-name"
+          placeholder="Emergency Contact Name"
+          required
+        />
+        <input
+          type="tel"
+          id="emergency-contact-phone"
+          placeholder="Emergency Contact Phone Number"
+          required
+        />
+
+        <!-- Driver Specific Fields -->
+        <div id="driver-specific-fields" style="display: none">
+          <input
+            type="text"
+            id="driver-license-id"
+            placeholder="Driver License ID"
+            required
+          />
+          <div class="file-upload">
+            <button
+              type="button"
+              onclick="document.getElementById('license-front-photo').click()"
+            >
+              Upload Front of License
+            </button>
+            <input
+              type="file"
+              id="license-front-photo"
+              style="display: none"
+              required
+            />
+          </div>
+          <div class="file-upload">
+            <button
+              type="button"
+              onclick="document.getElementById('license-back-photo').click()"
+            >
+              Upload Back of License
+            </button>
+            <input
+              type="file"
+              id="license-back-photo"
+              style="display: none"
+              required
+            />
+          </div>
+          <input
+            type="text"
+            id="vehicle-type"
+            placeholder="Vehicle Type"
+            required
+          />
+          <input type="text" id="color" placeholder="Vehicle Color" required />
+          <input type="number" id="capacity" placeholder="Capacity" required />
+          <select id="fuel-type" required>
+            <option value="">Fuel Type</option>
+            <option value="diesel">Diesel</option>
+            <option value="electric">Electric</option>
+            <option value="hybrid">Hybrid</option>
+          </select>
+          <input
+            type="text"
+            id="car-registration"
+            placeholder="Car Registration"
+            required
+          />
+        </div>
+
+        <!-- Verification Method -->
+        <label>Verification Method:</label>
+        <label>
+          <input
+            type="radio"
+            name="verification-method"
+            value="email"
+            checked
+          />
+          Email
+        </label>
+        <label>
+          <input type="radio" name="verification-method" value="phone" /> Phone
+        </label>
+
+        <!-- Password -->
+        <input type="password" id="password" placeholder="Password" required />
+        <input
+          type="password"
+          id="repeat-password"
+          placeholder="Repeat Password"
+          required
+        />
+
+        <!-- Submit Button -->
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <script src="register.js"></script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Illegal Advertising Monitoring - NeighbourLink</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="illegal.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <h1><i class="fas fa-ban"></i> Illegal Advertising Monitoring</h1>
+      </div>
+      <div class="container">
+        <div class="filters">
+          <input type="text" id="searchInput" placeholder="Search..." />
+          <select id="sortOption">
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+          </select>
+        </div>
+        <div class="ad-reports">
+          <!-- Ad reports will be dynamically added here -->
+        </div>
+      </div>
+      <!-- Feedback Modal -->
+      <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal();">&times;</span>
+          <p id="feedbackMessage"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="illegal.js"></script>
+  </body>
+</html>
