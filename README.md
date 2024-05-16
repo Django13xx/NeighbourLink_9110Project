@@ -25,7 +25,7 @@ NeighbourLink aims to provide an environmentally sustainable car-sharing solutio
 
 1. **Open the project folder**:
     ```bash
-    cd 9110PROJECT
+    cd NeighbourLink_9110Project
     ```
 2. **go to the `mainpage.html` file in Visual Studio**:
 
