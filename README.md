@@ -1,5 +1,5 @@
 # NeighbourLink
-###  You can have a quickly walkthrough by watching the video named "neighbourlink240416.mp4"
+###  You can have a quickly walkthrough by downloading and watching the video named "neighbourlink240416.mp4", or you can also view by this link https://drive.google.com/file/d/1hWJDwP7cvnNsSPM38pV9dMAbTRK4xk2H/view?usp=sharing
 
 NeighbourLink is a web-based car-sharing platform designed to facilitate multiple users sharing the same car and splitting the costs. The platform connects drivers and riders, who must agree on cost-sharing and pickup points before starting the ride. After completing the ride and payments, users can leave reviews as feedback.
 
